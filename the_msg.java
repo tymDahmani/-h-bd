@@ -57,7 +57,7 @@ public class the_msg {
         status = "exhausted"; // tired || exhausted || energetic
         hope = "low"; // high || low || okay
 
-        LocalDate bd = LocalDate.of(2024, 6, 23);
+        LocalDate bd = LocalDate.of(2025, 4, 30);
         LocalDate currenDate = LocalDate.now();
 
         double infinity = Double.POSITIVE_INFINITY;
