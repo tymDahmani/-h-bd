@@ -45,10 +45,10 @@ public class the_msg {
     public static void main(String[] args) {
         
         you you = new you();
-        int age = you.age;
-        String mood = you.mood;
-        String status = you.status;
-        String hope = you.hope;
+        int age;
+        String mood;
+        String status;
+        String hope;
         boolean alive = you.alive;
 
         age = 29;
@@ -62,16 +62,32 @@ public class the_msg {
 
         double infinity = Double.POSITIVE_INFINITY;
 
-        while ((boolean) you.isAlive()) {
-            if (currenDate.equals(bd)) {
-                for (int i = 0; i<=infinity; i++) {
-                    System.out.println("( sqrt((HB)^2) + sqrt((D^2) ) + to/u u^2 ");
-                }   
-            }
+        // while ((boolean) you.isAlive()) {
+            
 
-            if (mood.equalsIgnoreCase("sad") || mood.equalsIgnoreCase("meh") || status.equalsIgnoreCase("tired") || status.equalsIgnoreCase("exhausted") || hope.equalsIgnoreCase("low") || hope.equalsIgnoreCase("okay")) {
+        // }
 
-            }
+        if (currenDate.equals(bd)) {
+            for (int i = 0; i<=infinity; i++) {
+                System.out.println("( sqrt((HB)^2) + sqrt((D^2) ) + to/u u^2 ");
+            }   
+        }
+
+        if (mood.equalsIgnoreCase("sad") || status.equalsIgnoreCase("exhausted") || hope.equalsIgnoreCase("low")) {
+            you.makeHappy();
+            you.getEnergetic();
+            you.highHopes();
+            age ++;
+
+            mood = you.mood;
+            status = you.status;
+            hope = you.hope;
+            // age = you.age;
+            
+            System.out.println(mood);
+            System.out.println(status);
+            System.out.println(hope);
+            System.out.println(age);
         }
 
         

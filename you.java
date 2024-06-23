@@ -13,11 +13,13 @@ public class you {
         this.status = status;
         this.hope = hope;
         this.age = age;
+        this.alive = alive;
 
     }
 
-    void makeHappy() {
+    public String makeHappy() {
         this.mood = "happy";
+        return this.mood;
     }
 
     void highHopes() {
